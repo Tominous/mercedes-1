@@ -108,7 +108,7 @@
 
 
    	var gui = new dat.GUI();
-   	//gui.close();
+   	gui.close();
     gui.add(guiControl, 'speed', 0, 0.4);
     gui.add(guiControl, 'wireframe');
    	gui.add(guiControl, 'openDoor');
@@ -334,7 +334,7 @@
 		light4.shadowMapWidth = 2048;
 		light4.shadowMapHeight = 2048;
 
-		/*
+		
 		for (var i = 0; i < 2; i++) {
 			var flareLight = new THREE.PointLight( new THREE.Color("rgb(255,255,255)"), 0.5);
 			flareLight.position.set( 20 + i * -40, -6, 63 );
@@ -347,14 +347,14 @@
 				
 			}
 
-		*/
+		
 
 		
 		scene.add ( light );
 		scene.add ( light2 );
 		scene.add ( light3 );
 		scene.add ( light4 );
-		//scene.add ( flareLight );
+		scene.add ( flareLight );
 		
 
 	}
